@@ -29,12 +29,6 @@ ExternalProject_Add(
     TEST_COMMAND ""
 )
 
-ExternalProject_Get_Property(cmn-lib-one install_dir)
-include_directories(${install_dir})
-
-ExternalProject_Get_Property(cmn-lib-two install_dir)
-include_directories(${install_dir})
-
 include_directories(${PROJECT_SOURCE_DIR} )
 
 
