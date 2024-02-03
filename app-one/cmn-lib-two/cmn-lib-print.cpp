@@ -4,12 +4,12 @@
 
 
 
-CmnLibPrint::CmnLibPrint(){
+CmnLibPrintT::CmnLibPrintT(){
 }
-CmnLibPrint::CmnLibPrint(const CmnLibPrint&){
+CmnLibPrintT::CmnLibPrintT(const CmnLibPrintT&){
 }
-CmnLibPrint::~CmnLibPrint(){
+CmnLibPrintT::~CmnLibPrintT(){
 }
-void CmnLibPrint::PrintTwoStrings(std::string str1, std::string str2){
+void CmnLibPrintT::PrintTwoStrings(std::string str1, std::string str2){
     std::cout << "PrintTwoStrings: " << str1 << " and " << str2 << std::endl;
 }

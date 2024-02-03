@@ -4,11 +4,11 @@
 
 using namespace std;
 
-class CmnLibPrint
+class CmnLibPrintO
 {
     public:
-        CmnLibPrint();
-        CmnLibPrint(const CmnLibPrint&);
-        ~CmnLibPrint();
+        CmnLibPrintO();
+        CmnLibPrintO(const CmnLibPrintO&);
+        ~CmnLibPrintO();
         void PrintOneString(std::string str);
 };

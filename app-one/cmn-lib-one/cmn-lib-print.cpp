@@ -4,12 +4,12 @@
 
 
 
-CmnLibPrint::CmnLibPrint(){
+CmnLibPrintO::CmnLibPrintO(){
 }
-CmnLibPrint::CmnLibPrint(const CmnLibPrint&){
+CmnLibPrintO::CmnLibPrintO(const CmnLibPrintO&){
 }
-CmnLibPrint::~CmnLibPrint(){
+CmnLibPrintO::~CmnLibPrintO(){
 }
-void CmnLibPrint::PrintOneString(std::string str){
-    std::cout << "CmnLibPrint: " << str << std::endl;
+void CmnLibPrintO::PrintOneString(std::string str){
+    std::cout << "CmnLibPrintO: " << str << std::endl;
 }
