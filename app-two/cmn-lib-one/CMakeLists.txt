@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.28)
+project(cmn-lib-one)
+include_directories(${PROJECT_SOURCE_DIR})
+set(CMAKE_CXX_STANDARD 17)
+FILE(GLOB cmn-lib-one-src *.cpp)
+set(CMAKE_VERBOSE_MAKEFILE ON)
+set(CMAKE_COLOR_MAKEFILE   ON)
+ADD_LIBRARY( cmn-lib-one STATIC ${cmn-lib-one-src} )

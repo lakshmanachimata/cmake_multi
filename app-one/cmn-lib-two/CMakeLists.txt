@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.28)
+project(cmn-lib-two)
+include_directories(${PROJECT_SOURCE_DIR})
+set(CMAKE_CXX_STANDARD 17)
+FILE(GLOB cmn-lib-two-src *.cpp)
+ADD_LIBRARY( cmn-lib-two STATIC ${cmn-lib-two-src} )

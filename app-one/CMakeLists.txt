@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.28)
+project(app-one)
+include_directories(${PROJECT_SOURCE_DIR})
+set(CMAKE_CXX_STANDARD 17)
+FILE(GLOB app-one *.cpp)
+set(CMAKE_VERBOSE_MAKEFILE ON)
+set(CMAKE_COLOR_MAKEFILE   ON)
+add_subdirectory(cmn-lib-one)
+add_subdirectory(cmn-lib-two)
+add_executable(${PROJECT_NAME} ${app-one})
+
+target_link_libraries(${PROJECT_NAME} cmn-lib-one cmn-lib-two)
