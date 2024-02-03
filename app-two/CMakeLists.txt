@@ -4,6 +4,7 @@ include(ExternalProject)
 project(app-two)
 
 
+
 ExternalProject_Add(
     cmn-lib-one
     GIT_REPOSITORY https://github.com/lakshmanachimata/cmn-lib-one.git
@@ -43,4 +44,4 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_COLOR_MAKEFILE   ON)
 add_executable(${PROJECT_NAME} ${app-two})
 
-target_link_libraries(${PROJECT_NAME} PRIVATE cmn-lib-one.a cmn-lib-two.a)
+target_link_libraries(${PROJECT_NAME}  ${CMAKE_CURRENT_SOURCE_DIR}/cmn-lib-one/build/libcmn-lib-one.a ${CMAKE_CURRENT_SOURCE_DIR}/cmn-lib-two/build/libcmn-lib-two.a)
