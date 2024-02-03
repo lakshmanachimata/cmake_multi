@@ -30,7 +30,9 @@
 *.exe
 *.out
 *.app
+
+.vscode
 build/
-dist/
+app-two/cmn-lib-one/
+app-two/cmn-lib-two/
 .DS_Store
-.vscode/
